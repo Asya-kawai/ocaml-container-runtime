@@ -1,6 +1,6 @@
 (* rkt のデータ型 *)
 
-module RktCommand = struct
+module Command = struct
   type t = {
     usage: string;
     short: string;

@@ -77,4 +77,10 @@
 - 予想
   - rktは本当にプロセスをrunするだけ
   - appはイメージのリストとかやってくれる
-  - 
+  - appみたいなコマンドをrktに追加するような形で実装しているだけ
+
+# rktのアーキテクチャ
+- https://github.com/rkt/rkt/blob/162450f29427dd618601dc84914a0597f873d9b9/Documentation/devel/architecture.md
+
+# ocaml-container-runtimeの実装
+- ocaml-getopt をコピーする https://github.com/Asya-kawai/ocaml-getopt.git
