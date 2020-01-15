@@ -84,3 +84,7 @@
 
 # ocaml-container-runtimeの実装
 - ocaml-getopt をコピーする https://github.com/Asya-kawai/ocaml-getopt.git
+
+# OCIの runtime仕様
+- https://github.com/opencontainers/runtime-spec
+- 日本語の資料だとこれとかわかりやすい https://thinkit.co.jp/article/14032
