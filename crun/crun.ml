@@ -90,50 +90,8 @@ let () =
     let handler_args =
       Array.to_list Sys.argv |> List.filter (fun x -> x <> handler_name)
     in
-    let handler = Handler.set_command handler handler_args in
+    let handler = Handler.set_command handler "handler_args" in
     let return_code = Handler.execute handler (fun x -> x)
     
 
 
-(*
-argp_parse について
-
-* http://crasseux.com/books/ctutorial/argp-example.html
-
-```
-/*
-   OPTIONS.  Field 1 in ARGP.
-   Order of fields: {NAME, KEY, ARG, FLAGS, DOC}.
-*/
-
-static struct argp_option options[] =
-{
-  {"verbose", 'v', 0, 0, "Produce verbose output"},
-  {"alpha",   'a', "STRING1", 0,
-   "Do something with STRING1 related to the letter A"},
-  {"bravo",   'b', "STRING2", 0,
-   "Do something with STRING2 related to the letter B"},
-  {"output",  'o', "OUTFILE", 0,
-   "Output to OUTFILE instead of to standard output"},
-  {0}
-};
-```
-
-詳細はこれ。
-```
-/*
-   The ARGP structure itself.
-*/
-static struct argp argp = {options, parse_opt, args_doc, doc};
-
-```
-
-* KEYはoptions検索用のため不要とする
-* ARGは実際の値なので、これは必要
-* FLAGS
-* DOCはできたらつける
-
-*)
-
-let crun_create options =
-  

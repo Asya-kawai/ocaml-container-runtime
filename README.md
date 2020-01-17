@@ -88,3 +88,6 @@
 # OCIの runtime仕様
 - https://github.com/opencontainers/runtime-spec
 - 日本語の資料だとこれとかわかりやすい https://thinkit.co.jp/article/14032
+
+# コンテナの動作とか
+- https://www.slideshare.net/maruyama097/containername-space-isolation
